@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #cae8ec, #94c7da);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, color 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    color: #2c2c2c;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #5a98c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #4c7faf;
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result-message {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#result-message:hover {
+    color: #232628; /* Red color on hover */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0965b0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #7e9dd2;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
