@@ -86,23 +86,24 @@ button:hover {
     transform: translateY(-2px); /* Slight lift on hover */
 }
 
+
 /* Responsive Design */
 
 /* For mobile devices (screen width less than 600px) */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
-    }
-
-    .game-container {
-        grid-template-columns: repeat(2, 80px); /* Smaller grid for mobile */
-        grid-gap: 8px;
+        font-size: 2rem; /* Slightly smaller heading */
     }
 
     .card {
-        width: 80px;
-        height: 80px;
-        font-size: 24px;
+        width: 70px; /* Smaller cards to fit within the screen */
+        height: 70px;
+        font-size: 24px; /* Smaller font size on cards */
+    }
+
+    .game-container {
+        grid-template-columns: repeat(4, 70px); /* Keep 4 columns but with smaller cards */
+        grid-gap: 8px;
     }
 
     button {
@@ -122,7 +123,7 @@ button:hover {
     }
 
     .game-container {
-        grid-template-columns: repeat(3, 90px); /* Adjust grid for tablets */
+        grid-template-columns: repeat(4, 90px); /* Adjust for tablets but keep 4 columns */
         grid-gap: 10px;
     }
 
